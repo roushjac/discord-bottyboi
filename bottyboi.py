@@ -46,7 +46,7 @@ async def choose(ctx, *choices: str):
 @bot.command()
 async def repeat(ctx, times: int, content='repeating...'):
     """Repeats a message multiple times."""
-    for i in range(times):
+    for _ in range(times):
         await ctx.send(content)
 
 @bot.command()
@@ -67,4 +67,4 @@ async def _bot(ctx):
     """Is the bot cool?"""
     await ctx.send('Yes, the bot is cool.')
 
-bot.run(getpass.getpass("token:" ))
+bot.run(getpass.getpass("token: "))
