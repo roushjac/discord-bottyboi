@@ -116,6 +116,12 @@ for iteration in range(NUM_ITERATIONS):
         test_chars = test_chars[1:] + ypred
 print()
 
+
+## TODO add option to save the trained model
+
+
+
+
 # Give the bot an input, see how it finishes it
 
 
